@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 const app = express()
-const port=process.env.port
+const port=process.env.PORT || 3000
 
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', (req, res) => {
@@ -54,7 +54,4 @@ app.listen(port,()=>{
     console.log(`Yoo i m listening in ${port}`)
 })
 
-  // POST method route
-  app.post('/', (req, res) => {
-    res.send('POST request to the homepage')
-  })
+ 
