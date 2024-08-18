@@ -50,7 +50,7 @@ app.get('/login',(req,res)=>{
     res.send("Login Page")
 })
 
-app.listen(process.env.port,()=>{
+app.listen(port,()=>{
     console.log(`Yoo i m listening in ${port}`)
 })
 
