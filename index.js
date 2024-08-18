@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
   res.send('hello world');
 });
 
-app.get('/jokes', (req, res) => {
+app.get('/api/jokes', (req, res) => {
   const jokes = [
     { id: 1, name: 'jokes1', desc: 'this is jokes 1' },
     { id: 2, name: 'jokes2', desc: 'this is jokes 2' },
